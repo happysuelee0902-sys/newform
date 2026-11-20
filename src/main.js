@@ -1,53 +1,53 @@
 
 // ============================================
-// 소개팅교회 홈페이지
+// 소개팅교 홈페이지
 // 콘텐츠는 이 파일 상단에서 수정하세요.
 // ============================================
 
 
-// 1. 설교 영상 데이터
+// 1. 교리 영상 데이터
 // youtube에 실제 YouTube 링크를 넣으면 재생됩니다.
 // 예시가 아닌 영상은 sample: false로 변경하세요.
 
 const sermons = [
     {
         title: "주선자는 누구인가",
-        category: "특별 설교",
+        category: "특별 계시",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
     },
     {
         title: "첫 만남의 예법",
-        category: "주일 설교",
+        category: "정기 가르침",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
     },
     {
         title: "구정전과 신정전",
-        category: "경전 강해",
+        category: "경전 해설",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
     },
     {
         title: "인연을 기다리는 자세",
-        category: "주일 설교",
+        category: "정기 가르침",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
     },
     {
         title: "연락의 의미",
-        category: "경전 강해",
+        category: "경전 해설",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
     },
     {
         title: "주선자의 책임",
-        category: "특별 설교",
+        category: "특별 계시",
         date: "영상 등록 예정",
         youtube: "",
         sample: true
@@ -112,11 +112,11 @@ const scriptures = {
 };
 
 
-// 3. 교회 소식
+// 3. 교단 소식
 
 const newsData = [
     {
-        title: "소개팅교회 홈페이지 안내",
+        title: "소개팅교 홈페이지 안내",
         date: "날짜 미정",
         body: "홈페이지 안내문을 입력할 수 있는 예시 공지입니다.",
         sample: true
@@ -242,13 +242,13 @@ function showPage() {
     }
 
     const titles = {
-        home: "소개팅교회",
-        about: "교회 소개",
-        sermons: "말씀과 설교",
+        home: "소개팅교",
+        about: "소개팅교 안내",
+        sermons: "교리와 가르침",
         old: "구정전",
         new: "신정전",
         recruit: "주선자 모집",
-        news: "교회 소식"
+        news: "교단 소식"
     };
 
     document.title = `${titles[validPage]} | 소개팅교회`;
@@ -270,7 +270,7 @@ window.addEventListener("hashchange", showPage);
 
 
 // ============================================
-// 설교 영상
+// 교리 영상
 // ============================================
 
 function sermonCard(sermon, index) {
@@ -400,7 +400,7 @@ document.addEventListener("click", event => {
             <div class="video-placeholder">
                 <strong>영상 준비 중</strong>
                 <p>
-                    실제 설교 영상 주소가 등록되면<br>
+                    실제 교리 영상 주소가 등록되면<br>
                     이곳에서 바로 재생할 수 있습니다.
                 </p>
             </div>
@@ -520,7 +520,7 @@ document.addEventListener("click", event => {
 
 
 // ============================================
-// 교회 소식
+// 교단 소식
 // ============================================
 
 function newsItem(item, expanded = false) {

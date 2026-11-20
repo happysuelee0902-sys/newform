@@ -396,7 +396,7 @@ textarea:focus-visible {
 }
 
 .sermon-image::after {
-    content: "CHURCH OF BLIND DATES";
+    content: "THE ORDER OF BLIND DATES";
     color: #ffffff6c;
     font-size: 9px;
     letter-spacing: .2em;
@@ -1238,7 +1238,7 @@ textarea:focus-visible {
     }
 }
 
-/* 소개팅교회 공식 로고 */
+/* 소개팅교 공식 로고 */
 
 .logo-image {
     width: 52px;
@@ -1258,4 +1258,21 @@ textarea:focus-visible {
         width: 40px;
         height: 40px;
     }
+}
+/* 푸터 소개팅교 로고 */
+.footer-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.footer-logo-title span {
+    display: inline-block;
 }
