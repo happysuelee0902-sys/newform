@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>소개팅교회 | 모든 만남에는 뜻이 있습니다</title>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- 최상단 -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>모든 만남에는 뜻이 있습니다.</span>
+            <span>THE CHURCH OF BLIND DATES</span>
+        </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <img src="/src/logo.png" alt="소개팅교회 로고" class="logo-image">
+                <span class="logo-text">
+                    소개팅교회
+                    <small>CHURCH OF BLIND DATES</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="mainNav">☰</button>
+
+            <nav class="main-nav" id="mainNav" aria-label="주 메뉴">
+                <a href="#about">교회소개</a>
+                <a href="#sermons">말씀과 설교</a>
+                <a href="#old">구정전</a>
+                <a href="#new">신정전</a>
+                <a href="#recruit">주선자 모집</a>
+                <a href="#news">교회소식</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- 홈 -->
+        <section class="page active" id="home">
+
+            <div class="hero">
+                <div class="container hero-content">
+                    <p class="hero-eyebrow">WELCOME TO OUR CHURCH</p>
+                    <h1>모든 만남에는<br>뜻이 있습니다.</h1>
+                    <div class="hero-line"></div>
+                    <p class="hero-description">
+                        수많은 만남 가운데<br>
+                        우리가 지켜야 할 말씀을 전합니다.
+                    </p>
+                    <a href="#about" class="hero-button">
+                        소개팅교회 알아보기 <span>→</span>
+                    </a>
+                </div>
+                <div class="hero-number">01 / 03</div>
+            </div>
+
+            <!-- 바로가기 -->
+            <div class="quick-menu">
+                <div class="container quick-grid">
+                    <a href="#sermons" class="quick-item">
+                        <span class="quick-icon">▷</span>
+                        <div>
+                            <strong>말씀과 설교</strong>
+                            <small>Online Sermons</small>
+                        </div>
+                        <span class="quick-arrow">↗</span>
+                    </a>
+
+                    <a href="#old" class="quick-item">
+                        <span class="quick-icon">Ⅰ</span>
+                        <div>
+                            <strong>구정전</strong>
+                            <small>Old Scripture</small>
+                        </div>
+                        <span class="quick-arrow">↗</span>
+                    </a>
+
+                    <a href="#new" class="quick-item">
+                        <span class="quick-icon">Ⅱ</span>
+                        <div>
+                            <strong>신정전</strong>
+                            <small>New Scripture</small>
+                        </div>
+                        <span class="quick-arrow">↗</span>
+                    </a>
+
+                    <a href="#recruit" class="quick-item">
+                        <span class="quick-icon">✧</span>
+                        <div>
+                            <strong>주선자 모집</strong>
+                            <small>Recruitment</small>
+                        </div>
+                        <span class="quick-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 최근 설교 -->
+            <section class="content-section container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">WORSHIP & SERMONS</p>
+                        <h2>은혜의 말씀</h2>
+                        <p>소개팅교회가 전하는 말씀을 만나보세요.</p>
+                    </div>
+                    <a href="#sermons" class="more-link">전체 설교 보기 →</a>
+                </div>
+
+                <div class="sermon-grid" id="homeSermons"></div>
+            </section>
+
+            <!-- 경전 안내 -->
+            <section class="scripture-promo">
+                <div class="container promo-inner">
+                    <div>
+                        <p class="eyebrow">THE SACRED SCRIPTURES</p>
+                        <h2>두 경전, 두 가지 가르침.</h2>
+                        <p>
+                            만남을 대하는 서로 다른 시대의 목소리.<br>
+                            구정전과 신정전의 말씀을 읽어보세요.
+                        </p>
+                    </div>
+
+                    <div class="promo-actions">
+                        <a href="#old">구정전 읽기 ↗</a>
+                        <a href="#new">신정전 읽기 ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 소식 -->
+            <section class="content-section container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">CHURCH NEWS</p>
+                        <h2>교회 소식</h2>
+                    </div>
+                    <a href="#news" class="more-link">전체 소식 보기 →</a>
+                </div>
+
+                <div id="homeNews" class="news-list"></div>
+            </section>
+
+            <!-- 안내 배너 -->
+            <section class="recruit-banner">
+                <div class="container">
+                    <p>THE CALLING</p>
+                    <h2>인연을 잇는 자를 찾습니다.</h2>
+                    <span>소개팅교회 공식 주선자 모집</span>
+                    <a href="#recruit">모집 안내 보기 →</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- 교회 소개 -->
+        <section class="page" id="about">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>ABOUT OUR CHURCH</p>
+                    <h1>교회 소개</h1>
+                    <span>소개팅교회에 오신 여러분을 환영합니다.</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <p class="eyebrow">OUR IDENTITY</p>
+                <h2 class="large-heading">만남에도 믿음이 필요한 시대.</h2>
+
+                <div class="intro-layout">
+                    <div class="intro-symbol">✦</div>
+
+                    <div class="intro-text">
+                        <h3>소개팅교회란?</h3>
+                        <p>
+                            소개팅교회는 소개팅을 하나의 신앙 체계처럼
+                            바라보는 가상의 종교 공동체입니다.
+                        </p>
+                        <p>
+                            첫 만남에서의 예법, 연락의 규칙, 주선자의 역할,
+                            서로 다른 연애관을 설교와 경전의 형식으로
+                            풀어냅니다.
+                        </p>
+                        <p>
+                            특히 구정전과 신정전을 통해 세대마다 달라지는
+                            만남의 규범과 그 모순을 살펴봅니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-columns">
+                    <article>
+                        <span>01</span>
+                        <h3>말씀</h3>
+                        <p>만남에서 반복되는 고민을 설교의 형식으로 전합니다.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>경전</h3>
+                        <p>서로 다른 가치관을 구정전과 신정전에 담습니다.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>주선</h3>
+                        <p>인연을 이어 주는 주선자의 책임을 탐구합니다.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 설교 -->
+        <section class="page" id="sermons">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>WORSHIP & SERMONS</p>
+                    <h1>말씀과 설교</h1>
+                    <span>만남의 길에서 전하는 말씀</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">SERMON ARCHIVE</p>
+                        <h2>설교 영상</h2>
+                    </div>
+                </div>
+
+                <div class="filter-row">
+                    <div class="filter-buttons" id="sermonFilters">
+                        <button class="filter active" data-filter="전체">전체</button>
+                        <button class="filter" data-filter="주일 설교">주일 설교</button>
+                        <button class="filter" data-filter="경전 강해">경전 강해</button>
+                        <button class="filter" data-filter="특별 설교">특별 설교</button>
+                    </div>
+
+                    <input type="search" id="sermonSearch"
+                        placeholder="설교 제목 검색"
+                        aria-label="설교 제목 검색">
+                </div>
+
+                <div class="sermon-grid" id="allSermons"></div>
+                <p class="empty-message" id="sermonEmpty" hidden>
+                    해당하는 설교가 없습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 구정전 -->
+        <section class="page" id="old">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>THE OLD SCRIPTURE</p>
+                    <h1>구정전</h1>
+                    <span>옛 만남의 가르침</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <div class="scripture-heading">
+                    <p class="eyebrow">THE OLD SCRIPTURE</p>
+                    <h2>구정전</h2>
+                    <p>책과 장을 선택하여 말씀을 읽으십시오.</p>
+                </div>
+
+                <div class="reader-layout">
+                    <aside class="reader-sidebar" id="oldBooks"></aside>
+
+                    <div class="reader-main">
+                        <div class="chapter-nav" id="oldChapters"></div>
+                        <article class="scripture-paper" id="oldText"></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 신정전 -->
+        <section class="page" id="new">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>THE NEW SCRIPTURE</p>
+                    <h1>신정전</h1>
+                    <span>새 시대의 가르침</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <div class="scripture-heading">
+                    <p class="eyebrow">THE NEW SCRIPTURE</p>
+                    <h2>신정전</h2>
+                    <p>책과 장을 선택하여 말씀을 읽으십시오.</p>
+                </div>
+
+                <div class="reader-layout">
+                    <aside class="reader-sidebar" id="newBooks"></aside>
+
+                    <div class="reader-main">
+                        <div class="chapter-nav" id="newChapters"></div>
+                        <article class="scripture-paper" id="newText"></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 주선자 모집 -->
+        <section class="page" id="recruit">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>MATCHMAKER RECRUITMENT</p>
+                    <h1>주선자 모집</h1>
+                    <span>인연을 이어 주는 사역에 함께하십시오.</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <div class="recruit-title">
+                    <p class="eyebrow">OFFICIAL RECRUITMENT</p>
+                    <h2>소개팅교회 주선자 공개 모집</h2>
+                    <p>※ 아래 모집 내용은 프로젝트용 예시이며 실제 채용 공고가 아닙니다.</p>
+                </div>
+
+                <div class="recruit-table">
+                    <div>
+                        <strong>모집 분야</strong>
+                        <span>인연 중개 및 첫 만남 관리</span>
+                    </div>
+                    <div>
+                        <strong>지원 자격</strong>
+                        <span>구정전 및 신정전의 가르침을 이해하는 자</span>
+                    </div>
+                    <div>
+                        <strong>선발 방식</strong>
+                        <span>경전 기반 직무 적합성 평가 (예시)</span>
+                    </div>
+                    <div>
+                        <strong>접수 기간</strong>
+                        <span>추후 안내</span>
+                    </div>
+                </div>
+
+                <div class="recruit-note">
+                    <h3>주선자의 사명</h3>
+                    <p>
+                        만남을 이어 주는 자는 단순히 두 사람을 연결하는 데
+                        그치지 아니하고, 그 첫 순간의 예법과 책임을
+                        함께 고민해야 합니다.
+                    </p>
+                    <small>※ 위 문구는 홈페이지를 위한 예시 소개문입니다.</small>
+                </div>
+
+                <div class="application-area">
+                    <h3>지원서 작성</h3>
+                    <p>
+                        현재는 기능 확인용 예시 지원서입니다.
+                        입력한 내용은 서버에 저장되거나 제출되지 않습니다.
+                    </p>
+
+                    <form id="applicationForm">
+                        <label for="appName">지원자 이름 (가명 가능)</label>
+                        <input type="text" id="appName" required maxlength="40">
+
+                        <label for="appReason">지원 동기</label>
+                        <textarea id="appReason" rows="5" required
+                            maxlength="1000"></textarea>
+
+                        <button type="submit" class="submit-button">
+                            예시 지원서 확인
+                        </button>
+                        <p class="form-message" id="formMessage"
+                            role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 교회 소식 -->
+        <section class="page" id="news">
+            <div class="sub-hero">
+                <div class="container">
+                    <p>CHURCH NEWS</p>
+                    <h1>교회 소식</h1>
+                    <span>소개팅교회의 새로운 소식을 전합니다.</span>
+                </div>
+            </div>
+
+            <div class="container inner-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">NOTICE</p>
+                        <h2>공지사항</h2>
+                    </div>
+                </div>
+
+                <div id="newsList" class="news-list"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <h2>✦ 소개팅교회</h2>
+                <p>CHURCH OF BLIND DATES</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">교회소개</a>
+                <a href="#sermons">설교영상</a>
+                <a href="#old">구정전</a>
+                <a href="#new">신정전</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                소개팅교회는 뉴폼 프로젝트를 위해 만들어진
+                가상의 종교이자 예술적 창작물입니다.
+                실제 종교단체 또는 채용 기관이 아닙니다.
+            </p>
+            <p>© CHURCH OF BLIND DATES. NEWFORM PROJECT.</p>
+        </div>
+    </footer>
+
+    <!-- 영상 팝업 -->
+    <dialog id="videoDialog">
+        <div class="dialog-top">
+            <h3 id="videoTitle">설교 영상</h3>
+            <button id="closeVideo" aria-label="영상 닫기">×</button>
+        </div>
+        <div id="videoContainer"></div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
